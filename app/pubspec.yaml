@@ -1,0 +1,48 @@
+name: fangxinyong
+description: "放心用 —— 扫食品条码，看懂配料表，本地离线给出安全等级"
+publish_to: 'none'
+version: 1.0.8+9
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # 状态管理 / 路由（pub-cache 已缓存）
+  flutter_riverpod: 2.6.1
+
+  # 本地数据库（pub-cache 已缓存；原型阶段直接用 sqlite3，不走 drift 代码生成）
+  sqlite3: 3.5.2
+  sqlite3_flutter_libs: 0.5.42
+
+  # 视觉智能：端上中文 OCR（扫码由 mobile_scanner 负责，不再引 ML Kit 条码模块，省 5.6MB）
+  google_mlkit_commons: 0.13.0
+  google_mlkit_text_recognition: 0.17.1
+
+  # 拍照（需联网下载一次；比 camera 插件轻，无需 CameraX 适配）
+  image_picker: ^1.1.2
+
+  # 联网查询商品信息（可一键关闭；pub-cache 已缓存）
+  http: 1.6.0
+
+  # 基础（已缓存）
+  path: 1.9.1
+  path_provider: 2.1.6
+  shared_preferences: 2.5.5
+  intl: 0.20.2
+  mobile_scanner: ^7.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/knowledge/foodguard.db
+    - assets/icon/app_icon.png

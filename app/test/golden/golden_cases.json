@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "algorithmVersion": "1.0.0",
+  "knowledgeVersion": "20260911-1",
+  "cases": [
+    {
+      "id": "G-001",
+      "name": "某品牌苏打饼干",
+      "barcode": "6900000000001",
+      "categoryCode": "07.0",
+      "foodForm": "SOLID",
+      "ingredients": "小麦粉、植物油、白砂糖、食用盐、碳酸氢钠、焦亚硫酸钠、食用香精、特丁基对苯二酚",
+      "nutrition": {
+        "basis": "per100g",
+        "energyKj": 2100,
+        "proteinG": 7.5,
+        "fatG": 25.0,
+        "saturatedFatG": 11.0,
+        "transFatG": 0.3,
+        "carbohydrateG": 62.0,
+        "sugarG": 8.0,
+        "dietaryFiberG": 2.5,
+        "sodiumMg": 720
+      },
+      "profile": {
+        "population": "ADULT",
+        "allergens": [],
+        "chronic": []
+      },
+      "expect": {
+        "score": 42,
+        "grade": "C",
+        "personalGrade": "C",
+        "additiveCount": 4,
+        "risk4Count": 2,
+        "novaGroup": 4,
+        "mustContainAdditive": ["焦亚硫酸钠", "特丁基对苯二酚"]
+      },
+      "tolerance": {
+        "score": 5
+      }
+    },
+    {
+      "id": "G-002",
+      "name": "纯牛奶",
+      "barcode": "6900000000002",
+      "categoryCode": "01.0",
+      "foodForm": "LIQUID",
+      "ingredients": "生牛乳",
+      "nutrition": {
+        "basis": "per100ml",
+        "energyKj": 270,
+        "proteinG": 3.2,
+        "fatG": 3.8,
+        "carbohydrateG": 4.8,
+        "sodiumMg": 60
+      },
+      "profile": {
+        "population": "ADULT",
+        "allergens": [],
+        "chronic": []
+      },
+      "expect": {
+        "score": 97,
+        "grade": "A",
+        "personalGrade": "A",
+        "additiveCount": 0,
+        "risk4Count": 0,
+        "novaGroup": 1
+      },
+      "tolerance": {
+        "score": 5
+      }
+    },
+    {
+      "id": "G-003",
+      "name": "某品牌火腿肠",
+      "barcode": "6900000000003",
+      "categoryCode": "08.0",
+      "foodForm": "SOLID",
+      "ingredients": "猪肉、鸡肉、水、淀粉、大豆蛋白、食用盐、白砂糖、三聚磷酸钠、焦磷酸钠、谷氨酸钠、D-异抗坏血酸钠、红曲红、亚硝酸钠",
+      "nutrition": {
+        "basis": "per100g",
+        "energyKj": 950,
+        "proteinG": 12.0,
+        "fatG": 14.0,
+        "carbohydrateG": 10.0,
+        "sodiumMg": 1050
+      },
+      "profile": {
+        "population": "ADULT",
+        "allergens": [],
+        "chronic": []
+      },
+      "expect": {
+        "grade": "C",
+        "mustContainAdditive": ["三聚磷酸钠", "焦磷酸钠", "亚硝酸钠", "谷氨酸钠"]
+      }
+    }
+  ]
+}

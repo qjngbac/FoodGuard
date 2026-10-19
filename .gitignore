@@ -1,0 +1,56 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+**/build/
+**/coverage/
+
+# Android & Gradle
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# Release APKs & Large Binary Builds (Please attach to GitHub Releases)
+*.apk
+*.aab
+
+# IDE & Editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.bak
+
+# Python & ETL
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+env/
+venv/
+data/dist/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Local Scratch, Private Notes & Non-Essential Offline Tooling
+scratch/
+各项目开发工具与环境清单.md
+HANDOVER.md
+RELEASE_NOTES.md
+data/
+docs/
+etl/
+scripts/
